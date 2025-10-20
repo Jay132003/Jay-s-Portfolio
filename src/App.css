@@ -1,0 +1,108 @@
+.app {
+  transition: all 0.3s ease;
+}
+
+.app.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.app.dark-mode .hero-section {
+  background-color: #000000;
+}
+
+.app.dark-mode .projects-section {
+  background-color: #000000;
+}
+
+.app.dark-mode .products-section {
+  background-color: #000000;
+}
+
+.app.dark-mode .footer-section {
+  background-color: #000000;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.app.dark-mode .section-title {
+  color: #999;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: 2px solid #000;
+  background: transparent;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.app.dark-mode .btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+.app.dark-mode .btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn-secondary {
+  border-color: #ccc;
+  color: #666;
+}
+
+.app.dark-mode .btn-secondary {
+  border-color: #444;
+  color: #999;
+}
+
+.btn-secondary:hover {
+  background: #ccc;
+  color: #000;
+}
+
+.app.dark-mode .btn-secondary:hover {
+  background: #444;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

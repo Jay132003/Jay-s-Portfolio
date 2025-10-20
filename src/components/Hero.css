@@ -1,0 +1,298 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.app.dark-mode .hero-section {
+  background: linear-gradient(135deg, #0a0a0a 0%, #000000 100%);
+}
+
+.hero-content {
+  max-width: 600px;
+  margin-bottom: 80px;
+}
+
+.hero-badge {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.hero-badge span {
+  background: rgba(0, 0, 0, 0.1);
+  color: #666;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.app.dark-mode .hero-badge span {
+  background: rgba(255, 255, 255, 0.1);
+  color: #999;
+}
+
+.availability-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.app.dark-mode .availability-badge {
+  color: #999;
+}
+
+.availability-dot {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.hero-title {
+  font-size: clamp(48px, 8vw, 80px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #000;
+  background: linear-gradient(135deg, #000 0%, #333 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app.dark-mode .hero-title {
+  color: #fff;
+  background: linear-gradient(135deg, #fff 0%, #ccc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.app.dark-mode .hero-subtitle {
+  color: #999;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hire-me-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.app.dark-mode .hire-me-btn {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.hire-me-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.app.dark-mode .hire-me-btn:hover {
+  background: #ccc;
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
+}
+
+.copy-email-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.app.dark-mode .copy-email-btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.copy-email-btn:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.app.dark-mode .copy-email-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.hero-visual {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 400px;
+}
+
+.hero-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.app.dark-mode .hero-image-placeholder {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  box-shadow: 0 20px 60px rgba(255, 255, 255, 0.1);
+}
+
+.image-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.floating-element {
+  position: absolute;
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.element-1 {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.element-2 {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  top: 60%;
+  right: 20%;
+  animation-delay: 1.5s;
+}
+
+.element-3 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  bottom: 20%;
+  left: 30%;
+  animation-delay: 3s;
+}
+
+.element-4 {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  top: 30%;
+  right: 10%;
+  animation-delay: 4.5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-20px) rotate(120deg);
+  }
+  66% {
+    transform: translateY(10px) rotate(240deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-visual {
+    position: static;
+    transform: none;
+    margin-top: 60px;
+    width: 300px;
+    height: 300px;
+    align-self: center;
+  }
+  
+  .hero-content {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 90px;
+    text-align: center;
+  }
+  
+  .hero-actions {
+    justify-content: center;
+  }
+  
+  .hire-me-btn,
+  .copy-email-btn {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+  
+  .hero-visual {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .floating-element {
+    animation-duration: 4s;
+  }
+}
