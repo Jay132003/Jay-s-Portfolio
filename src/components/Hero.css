@@ -196,64 +196,26 @@
   box-shadow: 0 20px 60px rgba(255, 255, 255, 0.1);
 }
 
-.image-content {
+.naruto-image {
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.floating-element {
-  position: absolute;
-  border-radius: 50%;
-  animation: float 6s ease-in-out infinite;
+.naruto-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
 }
 
-.element-1 {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  top: 20%;
-  left: 10%;
-  animation-delay: 0s;
-}
-
-.element-2 {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  top: 60%;
-  right: 20%;
-  animation-delay: 1.5s;
-}
-
-.element-3 {
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  bottom: 20%;
-  left: 30%;
-  animation-delay: 3s;
-}
-
-.element-4 {
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-  top: 30%;
-  right: 10%;
-  animation-delay: 4.5s;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  33% {
-    transform: translateY(-20px) rotate(120deg);
-  }
-  66% {
-    transform: translateY(10px) rotate(240deg);
-  }
+.naruto-img:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 1024px) {

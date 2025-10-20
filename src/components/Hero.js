@@ -90,11 +90,8 @@ const Hero = () => {
           transition={{ duration: 1, delay: 1 }}
         >
           <div className="hero-image-placeholder">
-            <div className="image-content">
-              <div className="floating-element element-1"></div>
-              <div className="floating-element element-2"></div>
-              <div className="floating-element element-3"></div>
-              <div className="floating-element element-4"></div>
+            <div className="naruto-image">
+              <img src="/Naruto.jpg" alt="Naruto" className="naruto-img" />
             </div>
           </div>
         </motion.div>
