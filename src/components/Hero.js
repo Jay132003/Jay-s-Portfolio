@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Copy } from 'lucide-react';
+import SpotifyPlaylist from './SpotifyPlaylist';
 import './Hero.css';
 
 const Hero = () => {
@@ -53,7 +54,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            With the great power comes great electricity bills.
+            With great powers come greate electricity bills. ⚡
           </motion.p>
 
           <motion.div 
@@ -81,6 +82,9 @@ const Hero = () => {
               Copy Email
             </motion.button>
           </motion.div>
+
+          {/* Spotify Playlist Component */}
+          <SpotifyPlaylist />
         </motion.div>
 
         <motion.div 
