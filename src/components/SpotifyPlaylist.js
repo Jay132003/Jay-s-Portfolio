@@ -275,17 +275,17 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         <List size={16} />
       </motion.button>
 
-      {/* Playlist Sidebar */}
+      {/* Playlist Modal */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ x: 400, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: 400, opacity: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="playlist-sidebar"
+            className="playlist-modal"
           >
-            {/* Sidebar Header */}
+            {/* Modal Header */}
             <div className="playlist-header">
               <div className="playlist-cover">
                 <img src={playlist.cover} alt="Playlist Cover" />
@@ -308,27 +308,6 @@ const SpotifyPlaylist = ({ isLightMode }) => {
               </button>
             </div>
 
-            {/* Current Playing Song */}
-            {currentSong && (
-              <div className="current-song">
-                <div className="current-song-info">
-                  <h4>{currentSong.title}</h4>
-                  <p>{currentSong.artist}</p>
-                </div>
-                <div className="current-song-controls">
-                  {isPlaying ? (
-                    <button onClick={pauseSong} className="control-btn">
-                      <Pause size={16} />
-                    </button>
-                  ) : (
-                    <button onClick={resumeSong} className="control-btn">
-                      <Play size={16} />
-                    </button>
-                  )}
-                </div>
-              </div>
-            )}
-
             {/* Songs List */}
             <div className="songs-list">
               <h4>All Songs</h4>
@@ -338,7 +317,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
                     key={song.id}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
+                    transition={{ delay: index * 0.05 }}
                     className={`song-item ${currentSong?.id === song.id ? 'active' : ''}`}
                     onClick={() => playSong(song)}
                   >
@@ -348,6 +327,9 @@ const SpotifyPlaylist = ({ isLightMode }) => {
                       ) : (
                         <span>{index + 1}</span>
                       )}
+                    </div>
+                    <div className="song-image">
+                      <img src={playlist.cover} alt={song.title} />
                     </div>
                     <div className="song-details">
                       <h5>{song.title}</h5>
