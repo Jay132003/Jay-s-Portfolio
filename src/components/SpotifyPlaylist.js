@@ -36,7 +36,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "The Weeknd, Daft Punk",
         duration: "3:50",
         album: "Starboy",
-        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+        image: "https://i.scdn.co/image/ab67616d000048514718e2b124f79258be7bc452"
       },
       {
         id: 4,
@@ -44,7 +44,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Dua Lipa",
         duration: "3:24",
         album: "Future Nostalgia",
-        image: "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f"
+        image: "https://i.scdn.co/image/ab67616d000048514bc66095f8a70bc4e6593f4f"
       },
       {
         id: 5,
@@ -52,7 +52,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Charlie Puth",
         duration: "3:29",
         album: "Voicenotes",
-        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
+        image: "https://i.scdn.co/image/ab67616d00004851897f73256b9128a9d70eaf66"
       },
       {
         id: 6,
@@ -60,7 +60,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Eminem",
         duration: "4:50",
         album: "The Eminem Show",
-        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
+        image: "https://i.scdn.co/image/ab67616d000048516ca5c90113b30c3c43ffb8f4"
       },
       {
         id: 7,
@@ -68,7 +68,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Imagine Dragons",
         duration: "3:24",
         album: "Evolve",
-        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+        image: "https://i.scdn.co/image/ab67616d000048515675e83f707f1d7271e5cf8a"
       },
       {
         id: 8,
@@ -76,7 +76,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Sean Paul, Dua Lipa",
         duration: "3:41",
         album: "Mad Love The Prequel",
-        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+        image: "https://i.scdn.co/image/ab67616d000048512d564195ed3dd7b70d64862c"
       },
       {
         id: 9,
@@ -84,7 +84,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Måneskin",
         duration: "3:43",
         album: "Chosen",
-        image: "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f"
+        image: "https://i.scdn.co/image/ab67616d00004851fa0ab3a28b5c52d8a5f97045"
       },
       {
         id: 10,
@@ -92,7 +92,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Dua Lipa",
         duration: "3:29",
         album: "Dua Lipa",
-        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
+        image: "https://i.scdn.co/image/ab67616d000048517833c9a792ad032d788d4011"
       },
       {
         id: 11,
@@ -100,7 +100,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Harry Styles",
         duration: "2:54",
         album: "Fine Line",
-        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
+        image: "https://i.scdn.co/image/ab67616d0000485177fdcfda6535601aff081b6a"
       },
       {
         id: 12,
@@ -108,7 +108,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Lukas Graham",
         duration: "3:57",
         album: "Lukas Graham",
-        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+        image: "https://i.scdn.co/image/ab67616d000048512d94d0f04e9a58d1654b760b"
       },
       {
         id: 13,
@@ -116,7 +116,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Avicii",
         duration: "2:56",
         album: "Stories",
-        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+        image: "https://i.scdn.co/image/ab67616d000048510ae4f4d42e4a09f3a29f64ad"
       },
       {
         id: 14,
@@ -124,7 +124,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Coldplay",
         duration: "4:18",
         album: "A Head Full of Dreams",
-        image: "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f"
+        image: "https://i.scdn.co/image/ab67616d000048518ff7c3580d429c8212b9a3b6"
       },
       {
         id: 15,
@@ -132,7 +132,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Coolio, L.V.",
         duration: "4:00",
         album: "Gangsta's Paradise",
-        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
+        image: "https://i.scdn.co/image/ab67616d000048517438996f6fe67c59d75d4e43"
       },
       {
         id: 16,
@@ -140,7 +140,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "KALEO",
         duration: "3:38",
         album: "A/B",
-        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
+        image: "https://i.scdn.co/image/ab67616d00004851f793a842c1642b09a768a63b"
       },
       {
         id: 17,
@@ -148,7 +148,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Ed Sheeran",
         duration: "3:53",
         album: "÷ (Divide)",
-        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+        image: "https://i.scdn.co/image/ab67616d00004851ba5db46f4b838ef6027e6f96"
       },
       {
         id: 18,
@@ -156,7 +156,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Hozier",
         duration: "4:01",
         album: "Hozier",
-        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+        image: "https://i.scdn.co/image/ab67616d000048517a9bf5f82e32d33d4503fe7b"
       },
       {
         id: 19,
@@ -164,7 +164,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Wiz Khalifa, Charlie Puth",
         duration: "3:49",
         album: "Furious 7 (Original Motion Picture Soundtrack)",
-        image: "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f"
+        image: "https://i.scdn.co/image/ab67616d000048514e5df11b17b2727da2b718d8"
       },
       {
         id: 20,
@@ -172,7 +172,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Alexander Rybak",
         duration: "3:05",
         album: "Fairytales",
-        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
+        image: "https://i.scdn.co/image/ab67616d000048512e1c6382b5cb1571270aad83"
       },
       {
         id: 21,
@@ -180,7 +180,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "2 Chainz, Wiz Khalifa",
         duration: "3:47",
         album: "Fast & Furious 6 (Original Motion Picture Soundtrack)",
-        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
+        image: "https://i.scdn.co/image/ab67616d000048513f04ce56f3786307572fc944"
       },
       {
         id: 22,
@@ -188,7 +188,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Maroon 5",
         duration: "3:51",
         album: "V",
-        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+        image: "https://i.scdn.co/image/ab67616d0000485137677af5b4f23fe9dc8a3c04"
       },
       {
         id: 23,
@@ -196,7 +196,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Melanie Martinez",
         duration: "2:59",
         album: "Cry Baby",
-        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+        image: "https://i.scdn.co/image/ab67616d000048513899712512f50a8d9e01e951"
       },
       {
         id: 24,
@@ -204,7 +204,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Post Malone, 21 Savage",
         duration: "3:38",
         album: "beerbongs & bentleys",
-        image: "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f"
+        image: "https://i.scdn.co/image/ab67616d00004851b1c4b76e23414c9f20242268"
       },
       {
         id: 25,
@@ -212,7 +212,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Shakira, Wyclef Jean",
         duration: "3:38",
         album: "Oral Fixation, Vol. 2",
-        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
+        image: "https://i.scdn.co/image/ab67616d0000485185432abc16fd92be0d435cb9"
       },
       {
         id: 26,
@@ -220,7 +220,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Macklemore & Ryan Lewis, Macklemore, Ryan Lewis, Wanz",
         duration: "3:55",
         album: "The Heist",
-        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
+        image: "https://i.scdn.co/image/ab67616d000048511cdc7eab166fcbfcaf8be8f6"
       },
       {
         id: 27,
@@ -228,7 +228,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Lil Nas X, Jack Harlow",
         duration: "3:32",
         album: "MONTERO",
-        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+        image: "https://i.scdn.co/image/ab67616d00004851ba26678947112dff3c3158bf"
       },
       {
         id: 28,
@@ -236,7 +236,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Eminem",
         duration: "4:10",
         album: "Encore",
-        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+        image: "https://i.scdn.co/image/ab67616d00004851726d48d93d02e1271774f023"
       },
       {
         id: 29,
@@ -244,7 +244,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Arctic Monkeys",
         duration: "3:03",
         album: "AM",
-        image: "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f"
+        image: "https://i.scdn.co/image/ab67616d000048514ae1c4c5c45aabe565499163"
       },
       {
         id: 30,
@@ -252,7 +252,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Lady Gaga, Bruno Mars",
         duration: "3:48",
         album: "Die With A Smile",
-        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
+        image: "https://i.scdn.co/image/ab67616d0000485182ea2e9e1858aa012c57cd45"
       }
     ]
   };
