@@ -53,7 +53,7 @@
 .fullscreen-playlist {
   position: fixed;
   top: 15%;
-  left: 15%;
+  left: 20%;
   transform: translate(-5%, -5%);
   width: 90vw;
   height: 85vh;
