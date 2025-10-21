@@ -8,19 +8,20 @@
 .playlist-toggle-btn {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 16px 24px;
+  gap: clamp(8px, 1.5vw, 12px);
+  padding: clamp(12px, 2.5vh, 16px) clamp(20px, 4vw, 24px);
   background: linear-gradient(135deg, #1db954 0%, #1ed760 100%);
   color: white;
   border: none;
-  border-radius: 12px;
+  border-radius: clamp(8px, 1.5vw, 12px);
   font-weight: 600;
-  font-size: 16px;
+  font-size: clamp(14px, 2.5vw, 16px);
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px rgba(29, 185, 84, 0.3);
   width: 100%;
   justify-content: center;
+  min-height: 48px;
 }
 
 .playlist-toggle-btn:hover {
@@ -52,12 +53,11 @@
 /* Full Screen Playlist */
 .fullscreen-playlist {
   position: fixed;
-  top: 15%;
-  left: 20%;
-  transform: translate(-5%, -5%);
-  width: 90vw;
-  height: 85vh;
-  max-width: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(320px, 95vw, 1200px);
+  height: clamp(500px, 90vh, 800px);
   border-radius: 16px;
   z-index: 1000;
   display: flex;
@@ -104,17 +104,18 @@
 .fullscreen-playlist-header {
   display: flex;
   align-items: center;
-  padding: 24px;
-  gap: 20px;
+  padding: clamp(16px, 3vw, 32px);
+  gap: clamp(12px, 2vw, 24px);
   background: linear-gradient(135deg, #1db954 0%, #1ed760 100%);
   color: white;
-  min-height: 160px;
+  min-height: clamp(120px, 20vh, 180px);
+  flex-wrap: wrap;
 }
 
 .playlist-cover-fullscreen {
-  width: 160px;
-  height: 160px;
-  border-radius: 16px;
+  width: clamp(100px, 15vw, 180px);
+  height: clamp(100px, 15vw, 180px);
+  border-radius: clamp(8px, 1.5vw, 16px);
   overflow: hidden;
   flex-shrink: 0;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
@@ -131,33 +132,33 @@
 }
 
 .playlist-info-fullscreen h2 {
-  font-size: 48px;
+  font-size: clamp(24px, 4vw, 48px);
   font-weight: 800;
-  margin: 0 0 12px 0;
+  margin: 0 0 clamp(8px, 1.5vh, 12px) 0;
   color: white;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .playlist-info-fullscreen p {
-  font-size: 20px;
+  font-size: clamp(14px, 2.5vw, 20px);
   color: rgba(255, 255, 255, 0.9);
-  margin: 0 0 24px 0;
+  margin: 0 0 clamp(16px, 3vh, 24px) 0;
 }
 
 .spotify-link-btn-fullscreen {
   background: rgba(255, 255, 255, 0.2);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 16px 32px;
-  border-radius: 30px;
-  font-size: 16px;
+  padding: clamp(12px, 2vh, 16px) clamp(20px, 4vw, 32px);
+  border-radius: clamp(20px, 3vw, 30px);
+  font-size: clamp(12px, 2vw, 16px);
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: clamp(8px, 1.5vw, 12px);
 }
 
 .spotify-link-btn-fullscreen:hover {
@@ -179,11 +180,11 @@
 /* Songs Header */
 .songs-header-fullscreen {
   display: grid;
-  grid-template-columns: 60px 1fr 250px 80px;
-  gap: 20px;
-  padding: 16px 24px;
+  grid-template-columns: clamp(40px, 8vw, 80px) 1fr clamp(150px, 25vw, 300px) clamp(60px, 10vw, 100px);
+  gap: clamp(12px, 2vw, 20px);
+  padding: clamp(12px, 2vh, 16px) clamp(16px, 3vw, 24px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 14px;
+  font-size: clamp(10px, 1.5vw, 14px);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -226,14 +227,14 @@
 /* Individual Song Items */
 .fullscreen-song-item {
   display: grid;
-  grid-template-columns: 60px 1fr 250px 80px;
-  gap: 20px;
+  grid-template-columns: clamp(40px, 8vw, 80px) 1fr clamp(150px, 25vw, 300px) clamp(60px, 10vw, 100px);
+  gap: clamp(12px, 2vw, 20px);
   align-items: center;
-  padding: 12px 24px;
+  padding: clamp(8px, 1.5vh, 12px) clamp(16px, 3vw, 24px);
   cursor: pointer;
   transition: all 0.2s ease;
   border-radius: 8px;
-  margin: 2px 16px;
+  margin: clamp(1px, 0.5vh, 2px) clamp(8px, 2vw, 16px);
 }
 
 .fullscreen-song-item:hover {
@@ -302,9 +303,9 @@
 }
 
 .song-image-fullscreen {
-  width: 60px;
-  height: 60px;
-  border-radius: 8px;
+  width: clamp(40px, 8vw, 70px);
+  height: clamp(40px, 8vw, 70px);
+  border-radius: clamp(4px, 1vw, 8px);
   overflow: hidden;
   flex-shrink: 0;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
@@ -325,7 +326,7 @@
 }
 
 .song-details-fullscreen h4 {
-  font-size: 18px;
+  font-size: clamp(14px, 2.5vw, 18px);
   font-weight: 600;
   margin: 0;
   color: white;
@@ -344,7 +345,7 @@
 }
 
 .song-details-fullscreen p {
-  font-size: 16px;
+  font-size: clamp(12px, 2vw, 16px);
   color: #b3b3b3;
   margin: 0;
   white-space: nowrap;
@@ -412,7 +413,52 @@
   display: none; /* WebKit */
 }
 
-/* Mobile Responsive */
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .fullscreen-playlist {
+    width: 1200px;
+    height: 800px;
+  }
+  
+  .playlist-cover-fullscreen {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Desktop */
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .fullscreen-playlist {
+    width: 1000px;
+    height: 700px;
+  }
+}
+
+/* Laptop */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .fullscreen-playlist {
+    width: 900px;
+    height: 650px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) and (min-width: 769px) {
+  .fullscreen-playlist {
+    width: 90vw;
+    height: 85vh;
+  }
+  
+  .songs-header-fullscreen {
+    grid-template-columns: 50px 1fr 180px 70px;
+  }
+  
+  .fullscreen-song-item {
+    grid-template-columns: 50px 1fr 180px 70px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .fullscreen-playlist {
     width: 95vw;
@@ -421,22 +467,21 @@
   }
   
   .fullscreen-playlist-header {
-    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
     gap: 16px;
-    min-height: 120px;
+    min-height: auto;
   }
   
   .playlist-cover-fullscreen {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
   }
   
-  .playlist-info-fullscreen h2 {
-    font-size: 28px;
-  }
-  
-  .playlist-info-fullscreen p {
-    font-size: 14px;
+  .playlist-info-fullscreen {
+    text-align: center;
   }
   
   .songs-header-fullscreen {
@@ -465,19 +510,29 @@
     height: 40px;
   }
   
-  .song-details-fullscreen h4 {
-    font-size: 14px;
-  }
-  
-  .song-details-fullscreen p {
-    font-size: 12px;
-  }
-  
   .song-album-fullscreen {
     display: none;
   }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .fullscreen-playlist {
+    width: 98vw;
+    height: 95vh;
+    border-radius: 8px;
+  }
   
-  .song-duration-fullscreen {
+  .playlist-cover-fullscreen {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .playlist-info-fullscreen h2 {
+    font-size: 20px;
+  }
+  
+  .playlist-info-fullscreen p {
     font-size: 12px;
   }
 }
