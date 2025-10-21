@@ -3,226 +3,226 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Play, Pause, Music, X, List, Volume2 } from 'lucide-react';
 import './SpotifyPlaylist.css';
 
-const SpotifyPlaylist = () => {
+const SpotifyPlaylist = ({ isLightMode }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentSong, setCurrentSong] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  // Your actual Spotify playlist "Alive 🕊️"
+  // Your actual Spotify playlist "Human"
   const playlist = {
-    name: "Alive 🕊️",
+    name: "Human",
     cover: "/Akatsuki.jpg", // Using Akatsuki as playlist cover
-    spotifyUrl: "https://open.spotify.com/playlist/72PKk905OzSzSog1N8OLmC?si=4684e546f8bf4cdf",
+    spotifyUrl: "https://open.spotify.com/playlist/3fypkHaTRwz5lr7IMAF3q6?si=ae41e87b61554306",
     songs: [
       {
         id: 1,
-        title: "Chalti Hai Kya 9 Se 12",
-        artist: "Dev Negi, Neha Kakkar",
-        duration: "3:45",
-        album: "Alive 🕊️"
+        title: "Human",
+        artist: "Rag'n'Bone Man",
+        duration: "3:20",
+        album: "Human (Deluxe)"
       },
       {
         id: 2,
-        title: "Main Tera Boyfriend (From \"Raabta\")",
-        artist: "Arijit Singh, Neha Kakkar, Meet Bros.",
-        duration: "4:12",
-        album: "Alive 🕊️"
+        title: "Blinding Lights",
+        artist: "The Weeknd",
+        duration: "3:20",
+        album: "After Hours"
       },
       {
         id: 3,
-        title: "Ainvayi Ainvayi",
-        artist: "Salim–Sulaiman, Salim Merchant, Sunidhi Chauhan, Amitabh Bhattacharya",
-        duration: "3:58",
-        album: "Alive 🕊️"
+        title: "Starboy",
+        artist: "The Weeknd, Daft Punk",
+        duration: "3:50",
+        album: "Starboy"
       },
       {
         id: 4,
-        title: "Aadat Se Majboor",
-        artist: "Salim–Sulaiman, Benny Dayal, Ranveer Singh, Amitabh Bhattacharya",
-        duration: "4:05",
-        album: "Alive 🕊️"
+        title: "Levitating",
+        artist: "Dua Lipa",
+        duration: "3:24",
+        album: "Future Nostalgia"
       },
       {
         id: 5,
-        title: "Asalaam-e-Ishqum",
-        artist: "Sohail Sen, Neha Bhasin, Bappi Lahiri, Irshad Kamil",
-        duration: "3:42",
-        album: "Alive 🕊️"
+        title: "Attention",
+        artist: "Charlie Puth",
+        duration: "3:29",
+        album: "Voicenotes"
       },
       {
         id: 6,
-        title: "Thug Le",
-        artist: "Salim–Sulaiman, Vishal Dadlani, Shweta Pandit, Amitabh Bhattacharya",
-        duration: "4:18",
-        album: "Alive 🕊️"
+        title: "Without Me",
+        artist: "Eminem",
+        duration: "4:50",
+        album: "The Eminem Show"
       },
       {
         id: 7,
-        title: "Jigar Da Tukda",
-        artist: "Salim–Sulaiman, Salim Merchant, Shraddha Pandit, Amitabh Bhattacharya",
-        duration: "3:35",
-        album: "Alive 🕊️"
+        title: "Believer",
+        artist: "Imagine Dragons",
+        duration: "3:24",
+        album: "Evolve"
       },
       {
         id: 8,
-        title: "Dhunki",
-        artist: "Sohail Sen, Neha Bhasin, Irshad Kamil",
-        duration: "3:28",
-        album: "Alive 🕊️"
+        title: "No Lie",
+        artist: "Sean Paul, Dua Lipa",
+        duration: "3:41",
+        album: "Mad Love The Prequel"
       },
       {
         id: 9,
-        title: "Allah Maaf Kare",
-        artist: "Pritam, Sonu Nigam, Shilpa Rao",
-        duration: "4:15",
-        album: "Alive 🕊️"
+        title: "Beggin'",
+        artist: "Måneskin",
+        duration: "3:43",
+        album: "Chosen"
       },
       {
         id: 10,
-        title: "Long Drive",
-        artist: "Mika Singh",
-        duration: "3:52",
-        album: "Alive 🕊️"
+        title: "New Rules",
+        artist: "Dua Lipa",
+        duration: "3:29",
+        album: "Dua Lipa"
       },
       {
         id: 11,
-        title: "Kiya Kiya",
-        artist: "Anand Raj Anand, Shweta Pandit",
-        duration: "3:47",
-        album: "Alive 🕊️"
+        title: "Watermelon Sugar",
+        artist: "Harry Styles",
+        duration: "2:54",
+        album: "Fine Line"
       },
       {
         id: 12,
-        title: "No Entry: Ishq Di Galli Vich",
-        artist: "Sonu Nigam, Alisha Chinai",
-        duration: "4:22",
-        album: "Alive 🕊️"
+        title: "7 Years",
+        artist: "Lukas Graham",
+        duration: "3:57",
+        album: "Lukas Graham"
       },
       {
         id: 13,
-        title: "Love Me Love Me",
-        artist: "Wajid, Amrita Kak",
-        duration: "3:38",
-        album: "Alive 🕊️"
+        title: "The Nights",
+        artist: "Avicii",
+        duration: "2:56",
+        album: "Stories"
       },
       {
         id: 14,
-        title: "One Bottle Down",
-        artist: "Yo Yo Honey Singh",
-        duration: "3:25",
-        album: "Alive 🕊️"
+        title: "Hymn for the Weekend",
+        artist: "Coldplay",
+        duration: "4:18",
+        album: "A Head Full of Dreams"
       },
       {
         id: 15,
-        title: "Kisi Disco Mein Jaaye",
-        artist: "Alka Yagnik, Udit Narayan",
-        duration: "4:08",
-        album: "Alive 🕊️"
+        title: "Gangsta's Paradise",
+        artist: "Coolio, L.V.",
+        duration: "4:00",
+        album: "Gangsta's Paradise"
       },
       {
         id: 16,
-        title: "Mujhko Yaad Sataye Teri",
-        artist: "Himesh Reshammiya",
-        duration: "3:55",
-        album: "Alive 🕊️"
+        title: "Way down We Go",
+        artist: "KALEO",
+        duration: "3:38",
+        album: "A/B"
       },
       {
         id: 17,
-        title: "Daaru Party",
-        artist: "Millind Gaba",
-        duration: "3:41",
-        album: "Alive 🕊️"
+        title: "Shape of You",
+        artist: "Ed Sheeran",
+        duration: "3:53",
+        album: "÷ (Divide)"
       },
       {
         id: 18,
-        title: "Ucha Lamba Kad",
-        artist: "Anand Raj Anand",
-        duration: "3:33",
-        album: "Alive 🕊️"
+        title: "Take Me To Church",
+        artist: "Hozier",
+        duration: "4:01",
+        album: "Hozier"
       },
       {
         id: 19,
-        title: "Sau Tarah Ke",
-        artist: "Pritam, Jonita Gandhi, Amit Mishra, Kumaar, Ashish Pandit",
-        duration: "4:30",
-        album: "Alive 🕊️"
+        title: "See You Again (feat. Charlie Puth)",
+        artist: "Wiz Khalifa, Charlie Puth",
+        duration: "3:49",
+        album: "Furious 7 (Original Motion Picture Soundtrack)"
       },
       {
         id: 20,
-        title: "Afghan Jalebi (Ya Baba)",
-        artist: "Pritam, Asrar, Akhtar Chinnal",
-        duration: "3:44",
-        album: "Alive 🕊️"
+        title: "Fairytale",
+        artist: "Alexander Rybak",
+        duration: "3:05",
+        album: "Fairytales"
       },
       {
         id: 21,
-        title: "Hawa Hawa",
-        artist: "Mika Singh, Prakriti Kakar, Gourov-Roshin",
-        duration: "3:29",
-        album: "Alive 🕊️"
+        title: "We Own It (Fast & Furious)",
+        artist: "2 Chainz, Wiz Khalifa",
+        duration: "3:47",
+        album: "Fast & Furious 6 (Original Motion Picture Soundtrack)"
       },
       {
         id: 22,
-        title: "Dil Cheez Tujhe Dedi (From \"Airlift\")",
-        artist: "Ankit Tiwari, Arijit Singh",
-        duration: "4:12",
-        album: "Alive 🕊️"
+        title: "Animals",
+        artist: "Maroon 5",
+        duration: "3:51",
+        album: "V"
       },
       {
         id: 23,
-        title: "I Hate Luv Storys",
-        artist: "Vishal-Shekhar, Vishal Dadlani",
-        duration: "3:56",
-        album: "Alive 🕊️"
+        title: "Play Date",
+        artist: "Melanie Martinez",
+        duration: "2:59",
+        album: "Cry Baby"
       },
       {
         id: 24,
-        title: "Oh Girl You're Mine",
-        artist: "Tarun Sagar, Alyssa Mendonsa, Loy Mendonsa",
-        duration: "3:48",
-        album: "Alive 🕊️"
+        title: "rockstar (feat. 21 Savage)",
+        artist: "Post Malone, 21 Savage",
+        duration: "3:38",
+        album: "beerbongs & bentleys"
       },
       {
         id: 25,
-        title: "Right Now Now",
-        artist: "Wajid, Sunidhi Chauhan, Suzanne D'Mello",
-        duration: "3:51",
-        album: "Alive 🕊️"
+        title: "Hips Don't Lie (feat. Wyclef Jean)",
+        artist: "Shakira, Wyclef Jean",
+        duration: "3:38",
+        album: "Oral Fixation, Vol. 2"
       },
       {
         id: 26,
-        title: "Character Dheela",
-        artist: "Pritam, Neeraj Shridhar, Amrita Kak",
-        duration: "4:05",
-        album: "Alive 🕊️"
+        title: "Thrift Shop (feat. Wanz)",
+        artist: "Macklemore & Ryan Lewis, Macklemore, Ryan Lewis, Wanz",
+        duration: "3:55",
+        album: "The Heist"
       },
       {
         id: 27,
-        title: "Locha-E-Ulfat",
-        artist: "Benny Dayal",
-        duration: "3:37",
-        album: "Alive 🕊️"
+        title: "INDUSTRY BABY (feat. Jack Harlow)",
+        artist: "Lil Nas X, Jack Harlow",
+        duration: "3:32",
+        album: "MONTERO"
       },
       {
         id: 28,
-        title: "Choomantar",
-        artist: "Sohail Sen, Benny Dayal, Aditi Singh Sharma, Irshad Kamil",
-        duration: "3:42",
-        album: "Alive 🕊️"
+        title: "Mockingbird",
+        artist: "Eminem",
+        duration: "4:10",
+        album: "Encore"
       },
       {
         id: 29,
-        title: "Galat Baat Hai (From \"Main Tera Hero\")",
-        artist: "Neeti Mohan, Javed Ali",
-        duration: "3:58",
-        album: "Alive 🕊️"
+        title: "I Wanna Be Yours",
+        artist: "Arctic Monkeys",
+        duration: "3:03",
+        album: "AM"
       },
       {
         id: 30,
-        title: "Pungi",
-        artist: "Pritam, Mika Singh, Amitabh Bhattacharya, Nakash Aziz, Javed Jaffrey",
-        duration: "4:15",
-        album: "Alive 🕊️"
+        title: "Die With A Smile",
+        artist: "Lady Gaga, Bruno Mars",
+        duration: "3:48",
+        album: "Die With A Smile"
       }
     ]
   };
@@ -249,6 +249,20 @@ const SpotifyPlaylist = () => {
 
   return (
     <div className="spotify-playlist-container">
+      {/* Blur Background Overlay */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className={`blur-background ${isLightMode ? 'light-blur' : 'dark-blur'}`}
+            onClick={togglePlaylist}
+          />
+        )}
+      </AnimatePresence>
+
       {/* Playlist Toggle Button */}
       <motion.button
         whileHover={{ scale: 1.05 }}

@@ -4,7 +4,7 @@ import { Mail, Copy } from 'lucide-react';
 import SpotifyPlaylist from './SpotifyPlaylist';
 import './Hero.css';
 
-const Hero = () => {
+const Hero = ({ isLightMode }) => {
   const copyEmail = () => {
     navigator.clipboard.writeText('panchalj481@gmail.com');
     // You can add a toast notification here
@@ -84,7 +84,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Spotify Playlist Component */}
-          <SpotifyPlaylist />
+          <SpotifyPlaylist isLightMode={isLightMode} />
         </motion.div>
 
         <motion.div 

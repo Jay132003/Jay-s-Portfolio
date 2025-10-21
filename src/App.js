@@ -16,7 +16,7 @@ function App() {
   return (
     <div className={`app ${isLightMode ? 'light-mode' : 'dark-mode'}`}>
       <Header isLightMode={isLightMode} toggleTheme={toggleTheme} />
-      <Hero />
+      <Hero isLightMode={isLightMode} />
       <Projects />
       <Products />
       <Footer />
