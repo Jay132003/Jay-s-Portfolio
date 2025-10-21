@@ -19,210 +19,240 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         title: "Human",
         artist: "Rag'n'Bone Man",
         duration: "3:20",
-        album: "Human (Deluxe)"
+        album: "Human (Deluxe)",
+        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
       },
       {
         id: 2,
         title: "Blinding Lights",
         artist: "The Weeknd",
         duration: "3:20",
-        album: "After Hours"
+        album: "After Hours",
+        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
       },
       {
         id: 3,
         title: "Starboy",
         artist: "The Weeknd, Daft Punk",
         duration: "3:50",
-        album: "Starboy"
+        album: "Starboy",
+        image: "https://i.scdn.co/image/ab67616d0000b2734f7b5b0d6b8b8b8b8b8b8b8b"
       },
       {
         id: 4,
         title: "Levitating",
         artist: "Dua Lipa",
         duration: "3:24",
-        album: "Future Nostalgia"
+        album: "Future Nostalgia",
+        image: "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f"
       },
       {
         id: 5,
         title: "Attention",
         artist: "Charlie Puth",
         duration: "3:29",
-        album: "Voicenotes"
+        album: "Voicenotes",
+        image: "https://i.scdn.co/image/ab67616d0000b273b7b8b8b8b8b8b8b8b8b8b8b8"
       },
       {
         id: 6,
         title: "Without Me",
         artist: "Eminem",
         duration: "4:50",
-        album: "The Eminem Show"
+        album: "The Eminem Show",
+        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
       },
       {
         id: 7,
         title: "Believer",
         artist: "Imagine Dragons",
         duration: "3:24",
-        album: "Evolve"
+        album: "Evolve",
+        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
       },
       {
         id: 8,
         title: "No Lie",
         artist: "Sean Paul, Dua Lipa",
         duration: "3:41",
-        album: "Mad Love The Prequel"
+        album: "Mad Love The Prequel",
+        image: "https://i.scdn.co/image/ab67616d0000b2734f7b5b0d6b8b8b8b8b8b8b8b"
       },
       {
         id: 9,
         title: "Beggin'",
         artist: "Måneskin",
         duration: "3:43",
-        album: "Chosen"
+        album: "Chosen",
+        image: "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f"
       },
       {
         id: 10,
         title: "New Rules",
         artist: "Dua Lipa",
         duration: "3:29",
-        album: "Dua Lipa"
+        album: "Dua Lipa",
+        image: "https://i.scdn.co/image/ab67616d0000b273b7b8b8b8b8b8b8b8b8b8b8b8"
       },
       {
         id: 11,
         title: "Watermelon Sugar",
         artist: "Harry Styles",
         duration: "2:54",
-        album: "Fine Line"
+        album: "Fine Line",
+        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
       },
       {
         id: 12,
         title: "7 Years",
         artist: "Lukas Graham",
         duration: "3:57",
-        album: "Lukas Graham"
+        album: "Lukas Graham",
+        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
       },
       {
         id: 13,
         title: "The Nights",
         artist: "Avicii",
         duration: "2:56",
-        album: "Stories"
+        album: "Stories",
+        image: "https://i.scdn.co/image/ab67616d0000b2734f7b5b0d6b8b8b8b8b8b8b8b"
       },
       {
         id: 14,
         title: "Hymn for the Weekend",
         artist: "Coldplay",
         duration: "4:18",
-        album: "A Head Full of Dreams"
+        album: "A Head Full of Dreams",
+        image: "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f"
       },
       {
         id: 15,
         title: "Gangsta's Paradise",
         artist: "Coolio, L.V.",
         duration: "4:00",
-        album: "Gangsta's Paradise"
+        album: "Gangsta's Paradise",
+        image: "https://i.scdn.co/image/ab67616d0000b273b7b8b8b8b8b8b8b8b8b8b8b8"
       },
       {
         id: 16,
         title: "Way down We Go",
         artist: "KALEO",
         duration: "3:38",
-        album: "A/B"
+        album: "A/B",
+        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
       },
       {
         id: 17,
         title: "Shape of You",
         artist: "Ed Sheeran",
         duration: "3:53",
-        album: "÷ (Divide)"
+        album: "÷ (Divide)",
+        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
       },
       {
         id: 18,
         title: "Take Me To Church",
         artist: "Hozier",
         duration: "4:01",
-        album: "Hozier"
+        album: "Hozier",
+        image: "https://i.scdn.co/image/ab67616d0000b2734f7b5b0d6b8b8b8b8b8b8b8b"
       },
       {
         id: 19,
         title: "See You Again (feat. Charlie Puth)",
         artist: "Wiz Khalifa, Charlie Puth",
         duration: "3:49",
-        album: "Furious 7 (Original Motion Picture Soundtrack)"
+        album: "Furious 7 (Original Motion Picture Soundtrack)",
+        image: "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f"
       },
       {
         id: 20,
         title: "Fairytale",
         artist: "Alexander Rybak",
         duration: "3:05",
-        album: "Fairytales"
+        album: "Fairytales",
+        image: "https://i.scdn.co/image/ab67616d0000b273b7b8b8b8b8b8b8b8b8b8b8b8"
       },
       {
         id: 21,
         title: "We Own It (Fast & Furious)",
         artist: "2 Chainz, Wiz Khalifa",
         duration: "3:47",
-        album: "Fast & Furious 6 (Original Motion Picture Soundtrack)"
+        album: "Fast & Furious 6 (Original Motion Picture Soundtrack)",
+        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
       },
       {
         id: 22,
         title: "Animals",
         artist: "Maroon 5",
         duration: "3:51",
-        album: "V"
+        album: "V",
+        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
       },
       {
         id: 23,
         title: "Play Date",
         artist: "Melanie Martinez",
         duration: "2:59",
-        album: "Cry Baby"
+        album: "Cry Baby",
+        image: "https://i.scdn.co/image/ab67616d0000b2734f7b5b0d6b8b8b8b8b8b8b8b"
       },
       {
         id: 24,
         title: "rockstar (feat. 21 Savage)",
         artist: "Post Malone, 21 Savage",
         duration: "3:38",
-        album: "beerbongs & bentleys"
+        album: "beerbongs & bentleys",
+        image: "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f"
       },
       {
         id: 25,
         title: "Hips Don't Lie (feat. Wyclef Jean)",
         artist: "Shakira, Wyclef Jean",
         duration: "3:38",
-        album: "Oral Fixation, Vol. 2"
+        album: "Oral Fixation, Vol. 2",
+        image: "https://i.scdn.co/image/ab67616d0000b273b7b8b8b8b8b8b8b8b8b8b8b8"
       },
       {
         id: 26,
         title: "Thrift Shop (feat. Wanz)",
         artist: "Macklemore & Ryan Lewis, Macklemore, Ryan Lewis, Wanz",
         duration: "3:55",
-        album: "The Heist"
+        album: "The Heist",
+        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
       },
       {
         id: 27,
         title: "INDUSTRY BABY (feat. Jack Harlow)",
         artist: "Lil Nas X, Jack Harlow",
         duration: "3:32",
-        album: "MONTERO"
+        album: "MONTERO",
+        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
       },
       {
         id: 28,
         title: "Mockingbird",
         artist: "Eminem",
         duration: "4:10",
-        album: "Encore"
+        album: "Encore",
+        image: "https://i.scdn.co/image/ab67616d0000b2734f7b5b0d6b8b8b8b8b8b8b8b"
       },
       {
         id: 29,
         title: "I Wanna Be Yours",
         artist: "Arctic Monkeys",
         duration: "3:03",
-        album: "AM"
+        album: "AM",
+        image: "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f"
       },
       {
         id: 30,
         title: "Die With A Smile",
         artist: "Lady Gaga, Bruno Mars",
         duration: "3:48",
-        album: "Die With A Smile"
+        album: "Die With A Smile",
+        image: "https://i.scdn.co/image/ab67616d0000b273b7b8b8b8b8b8b8b8b8b8b8b8"
       }
     ]
   };
@@ -329,7 +359,13 @@ const SpotifyPlaylist = ({ isLightMode }) => {
                       )}
                     </div>
                     <div className="song-image">
-                      <img src={playlist.cover} alt={song.title} />
+                      <img 
+                        src={song.image} 
+                        alt={song.title}
+                        onError={(e) => {
+                          e.target.src = playlist.cover; // Fallback to Akatsuki image
+                        }}
+                      />
                     </div>
                     <div className="song-details">
                       <h5>{song.title}</h5>
