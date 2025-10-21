@@ -95,7 +95,7 @@ const Hero = ({ isLightMode }) => {
         >
           <div className="hero-image-placeholder">
             <div className="naruto-image">
-              <img src="/Naruto.jpg" alt="Naruto" className="naruto-img" />
+              <img src="/Jay_Icon.jpeg" alt="Jay Panchal" className="naruto-img" />
             </div>
           </div>
         </motion.div>

@@ -11,7 +11,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
   // Your actual Spotify playlist "Human"
   const playlist = {
     name: "Human",
-    cover: "/Akatsuki.jpg", // Using Akatsuki as playlist cover
+    cover: "Public/Instagram.html", // Using Akatsuki as playlist cover
     spotifyUrl: "https://open.spotify.com/playlist/3fypkHaTRwz5lr7IMAF3q6?si=ae41e87b61554306",
     songs: [
       {
@@ -20,7 +20,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Rag'n'Bone Man",
         duration: "3:20",
         album: "Human (Deluxe)",
-        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
+        image: "https://i.scdn.co/image/ab67616d0000485190a788beadaad34ff684d3ec"
       },
       {
         id: 2,
