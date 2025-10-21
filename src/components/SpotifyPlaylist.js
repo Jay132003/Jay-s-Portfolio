@@ -8,52 +8,221 @@ const SpotifyPlaylist = () => {
   const [currentSong, setCurrentSong] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  // Sample playlist data - replace with your actual Spotify playlist
+  // Your actual Spotify playlist "Alive 🕊️"
   const playlist = {
-    name: "Jay's Favorites",
+    name: "Alive 🕊️",
     cover: "/Akatsuki.jpg", // Using Akatsuki as playlist cover
+    spotifyUrl: "https://open.spotify.com/playlist/72PKk905OzSzSog1N8OLmC?si=4684e546f8bf4cdf",
     songs: [
       {
         id: 1,
-        title: "Naruto Main Theme",
-        artist: "Toshio Masuda",
+        title: "Chalti Hai Kya 9 Se 12",
+        artist: "Dev Negi, Neha Kakkar",
         duration: "3:45",
-        album: "Naruto Original Soundtrack"
+        album: "Alive 🕊️"
       },
       {
         id: 2,
-        title: "Blue Bird",
-        artist: "Ikimono-gakari",
-        duration: "4:32",
-        album: "Naruto Shippuden Opening"
+        title: "Main Tera Boyfriend (From \"Raabta\")",
+        artist: "Arijit Singh, Neha Kakkar, Meet Bros.",
+        duration: "4:12",
+        album: "Alive 🕊️"
       },
       {
         id: 3,
-        title: "Silhouette",
-        artist: "KANA-BOON",
-        duration: "3:49",
-        album: "Naruto Shippuden Opening"
+        title: "Ainvayi Ainvayi",
+        artist: "Salim–Sulaiman, Salim Merchant, Sunidhi Chauhan, Amitabh Bhattacharya",
+        duration: "3:58",
+        album: "Alive 🕊️"
       },
       {
         id: 4,
-        title: "Sign",
-        artist: "FLOW",
+        title: "Aadat Se Majboor",
+        artist: "Salim–Sulaiman, Benny Dayal, Ranveer Singh, Amitabh Bhattacharya",
         duration: "4:05",
-        album: "Naruto Shippuden Opening"
+        album: "Alive 🕊️"
       },
       {
         id: 5,
-        title: "Hero's Come Back",
-        artist: "nobodyknows+",
-        duration: "3:58",
-        album: "Naruto Shippuden Opening"
+        title: "Asalaam-e-Ishqum",
+        artist: "Sohail Sen, Neha Bhasin, Bappi Lahiri, Irshad Kamil",
+        duration: "3:42",
+        album: "Alive 🕊️"
       },
       {
         id: 6,
-        title: "Closer",
-        artist: "Joe Inoue",
+        title: "Thug Le",
+        artist: "Salim–Sulaiman, Vishal Dadlani, Shweta Pandit, Amitabh Bhattacharya",
+        duration: "4:18",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 7,
+        title: "Jigar Da Tukda",
+        artist: "Salim–Sulaiman, Salim Merchant, Shraddha Pandit, Amitabh Bhattacharya",
+        duration: "3:35",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 8,
+        title: "Dhunki",
+        artist: "Sohail Sen, Neha Bhasin, Irshad Kamil",
+        duration: "3:28",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 9,
+        title: "Allah Maaf Kare",
+        artist: "Pritam, Sonu Nigam, Shilpa Rao",
+        duration: "4:15",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 10,
+        title: "Long Drive",
+        artist: "Mika Singh",
+        duration: "3:52",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 11,
+        title: "Kiya Kiya",
+        artist: "Anand Raj Anand, Shweta Pandit",
+        duration: "3:47",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 12,
+        title: "No Entry: Ishq Di Galli Vich",
+        artist: "Sonu Nigam, Alisha Chinai",
+        duration: "4:22",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 13,
+        title: "Love Me Love Me",
+        artist: "Wajid, Amrita Kak",
+        duration: "3:38",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 14,
+        title: "One Bottle Down",
+        artist: "Yo Yo Honey Singh",
+        duration: "3:25",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 15,
+        title: "Kisi Disco Mein Jaaye",
+        artist: "Alka Yagnik, Udit Narayan",
+        duration: "4:08",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 16,
+        title: "Mujhko Yaad Sataye Teri",
+        artist: "Himesh Reshammiya",
+        duration: "3:55",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 17,
+        title: "Daaru Party",
+        artist: "Millind Gaba",
+        duration: "3:41",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 18,
+        title: "Ucha Lamba Kad",
+        artist: "Anand Raj Anand",
+        duration: "3:33",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 19,
+        title: "Sau Tarah Ke",
+        artist: "Pritam, Jonita Gandhi, Amit Mishra, Kumaar, Ashish Pandit",
+        duration: "4:30",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 20,
+        title: "Afghan Jalebi (Ya Baba)",
+        artist: "Pritam, Asrar, Akhtar Chinnal",
+        duration: "3:44",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 21,
+        title: "Hawa Hawa",
+        artist: "Mika Singh, Prakriti Kakar, Gourov-Roshin",
+        duration: "3:29",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 22,
+        title: "Dil Cheez Tujhe Dedi (From \"Airlift\")",
+        artist: "Ankit Tiwari, Arijit Singh",
         duration: "4:12",
-        album: "Naruto Shippuden Opening"
+        album: "Alive 🕊️"
+      },
+      {
+        id: 23,
+        title: "I Hate Luv Storys",
+        artist: "Vishal-Shekhar, Vishal Dadlani",
+        duration: "3:56",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 24,
+        title: "Oh Girl You're Mine",
+        artist: "Tarun Sagar, Alyssa Mendonsa, Loy Mendonsa",
+        duration: "3:48",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 25,
+        title: "Right Now Now",
+        artist: "Wajid, Sunidhi Chauhan, Suzanne D'Mello",
+        duration: "3:51",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 26,
+        title: "Character Dheela",
+        artist: "Pritam, Neeraj Shridhar, Amrita Kak",
+        duration: "4:05",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 27,
+        title: "Locha-E-Ulfat",
+        artist: "Benny Dayal",
+        duration: "3:37",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 28,
+        title: "Choomantar",
+        artist: "Sohail Sen, Benny Dayal, Aditi Singh Sharma, Irshad Kamil",
+        duration: "3:42",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 29,
+        title: "Galat Baat Hai (From \"Main Tera Hero\")",
+        artist: "Neeti Mohan, Javed Ali",
+        duration: "3:58",
+        album: "Alive 🕊️"
+      },
+      {
+        id: 30,
+        title: "Pungi",
+        artist: "Pritam, Mika Singh, Amitabh Bhattacharya, Nakash Aziz, Javed Jaffrey",
+        duration: "4:15",
+        album: "Alive 🕊️"
       }
     ]
   };
@@ -65,7 +234,8 @@ const SpotifyPlaylist = () => {
   const playSong = (song) => {
     setCurrentSong(song);
     setIsPlaying(true);
-    // In a real implementation, you would integrate with Spotify Web API here
+    // Open the song on Spotify
+    window.open(playlist.spotifyUrl, '_blank');
     console.log(`Playing: ${song.title} by ${song.artist}`);
   };
 
@@ -109,6 +279,12 @@ const SpotifyPlaylist = () => {
               <div className="playlist-info">
                 <h3>{playlist.name}</h3>
                 <p>{playlist.songs.length} songs</p>
+                <button 
+                  onClick={() => window.open(playlist.spotifyUrl, '_blank')}
+                  className="spotify-link-btn"
+                >
+                  Open in Spotify
+                </button>
               </div>
               <button 
                 onClick={togglePlaylist}

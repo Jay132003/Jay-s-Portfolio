@@ -81,7 +81,24 @@
 .playlist-info p {
   font-size: 14px;
   color: #b3b3b3;
-  margin: 0;
+  margin: 0 0 8px 0;
+}
+
+.spotify-link-btn {
+  background: #1db954;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.spotify-link-btn:hover {
+  background: #1ed760;
+  transform: scale(1.05);
 }
 
 .close-btn {
