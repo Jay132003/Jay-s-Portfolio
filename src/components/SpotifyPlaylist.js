@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, Pause, Music, X, List, Volume2 } from 'lucide-react';
+import { Play, Pause, Music, Volume2, ExternalLink, X } from 'lucide-react';
 import './SpotifyPlaylist.css';
 
 const SpotifyPlaylist = ({ isLightMode }) => {
@@ -10,8 +10,8 @@ const SpotifyPlaylist = ({ isLightMode }) => {
 
   // Your actual Spotify playlist "Human"
   const playlist = {
-    name: "Human",
-    cover: "Public/Instagram.html", // Using Akatsuki as playlist cover
+    name: "Alive 🕊️",
+    cover: "/Alive.webp", // Using Alive.webp image as playlist cover
     spotifyUrl: "https://open.spotify.com/playlist/3fypkHaTRwz5lr7IMAF3q6?si=ae41e87b61554306",
     songs: [
       {
@@ -20,7 +20,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Rag'n'Bone Man",
         duration: "3:20",
         album: "Human (Deluxe)",
-        image: "https://i.scdn.co/image/ab67616d0000485190a788beadaad34ff684d3ec"
+        image: "https://i.scdn.co/image/ab67616d0000b27390a788beadaad34ff684d3ec"
       },
       {
         id: 2,
@@ -36,7 +36,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "The Weeknd, Daft Punk",
         duration: "3:50",
         album: "Starboy",
-        image: "https://i.scdn.co/image/ab67616d0000b2734f7b5b0d6b8b8b8b8b8b8b8b"
+        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
       },
       {
         id: 4,
@@ -52,7 +52,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Charlie Puth",
         duration: "3:29",
         album: "Voicenotes",
-        image: "https://i.scdn.co/image/ab67616d0000b273b7b8b8b8b8b8b8b8b8b8b8b8"
+        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
       },
       {
         id: 6,
@@ -76,7 +76,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Sean Paul, Dua Lipa",
         duration: "3:41",
         album: "Mad Love The Prequel",
-        image: "https://i.scdn.co/image/ab67616d0000b2734f7b5b0d6b8b8b8b8b8b8b8b"
+        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
       },
       {
         id: 9,
@@ -92,7 +92,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Dua Lipa",
         duration: "3:29",
         album: "Dua Lipa",
-        image: "https://i.scdn.co/image/ab67616d0000b273b7b8b8b8b8b8b8b8b8b8b8b8"
+        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
       },
       {
         id: 11,
@@ -116,7 +116,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Avicii",
         duration: "2:56",
         album: "Stories",
-        image: "https://i.scdn.co/image/ab67616d0000b2734f7b5b0d6b8b8b8b8b8b8b8b"
+        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
       },
       {
         id: 14,
@@ -132,7 +132,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Coolio, L.V.",
         duration: "4:00",
         album: "Gangsta's Paradise",
-        image: "https://i.scdn.co/image/ab67616d0000b273b7b8b8b8b8b8b8b8b8b8b8b8"
+        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
       },
       {
         id: 16,
@@ -156,7 +156,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Hozier",
         duration: "4:01",
         album: "Hozier",
-        image: "https://i.scdn.co/image/ab67616d0000b2734f7b5b0d6b8b8b8b8b8b8b8b"
+        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
       },
       {
         id: 19,
@@ -172,7 +172,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Alexander Rybak",
         duration: "3:05",
         album: "Fairytales",
-        image: "https://i.scdn.co/image/ab67616d0000b273b7b8b8b8b8b8b8b8b8b8b8b8"
+        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
       },
       {
         id: 21,
@@ -196,7 +196,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Melanie Martinez",
         duration: "2:59",
         album: "Cry Baby",
-        image: "https://i.scdn.co/image/ab67616d0000b2734f7b5b0d6b8b8b8b8b8b8b8b"
+        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
       },
       {
         id: 24,
@@ -212,7 +212,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Shakira, Wyclef Jean",
         duration: "3:38",
         album: "Oral Fixation, Vol. 2",
-        image: "https://i.scdn.co/image/ab67616d0000b273b7b8b8b8b8b8b8b8b8b8b8b8"
+        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
       },
       {
         id: 26,
@@ -236,7 +236,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Eminem",
         duration: "4:10",
         album: "Encore",
-        image: "https://i.scdn.co/image/ab67616d0000b2734f7b5b0d6b8b8b8b8b8b8b8b"
+        image: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
       },
       {
         id: 29,
@@ -252,7 +252,7 @@ const SpotifyPlaylist = ({ isLightMode }) => {
         artist: "Lady Gaga, Bruno Mars",
         duration: "3:48",
         album: "Die With A Smile",
-        image: "https://i.scdn.co/image/ab67616d0000b273b7b8b8b8b8b8b8b8b8b8b8b8"
+        image: "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91f982b5ad2eeef"
       }
     ]
   };
@@ -279,20 +279,6 @@ const SpotifyPlaylist = ({ isLightMode }) => {
 
   return (
     <div className="spotify-playlist-container">
-      {/* Blur Background Overlay */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className={`blur-background ${isLightMode ? 'light-blur' : 'dark-blur'}`}
-            onClick={togglePlaylist}
-          />
-        )}
-      </AnimatePresence>
-
       {/* Playlist Toggle Button */}
       <motion.button
         whileHover={{ scale: 1.05 }}
@@ -302,86 +288,114 @@ const SpotifyPlaylist = ({ isLightMode }) => {
       >
         <Music size={20} />
         My Playlist
-        <List size={16} />
       </motion.button>
 
-      {/* Playlist Modal */}
+      {/* Full Screen Playlist Modal */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="playlist-modal"
-          >
-            {/* Modal Header */}
-            <div className="playlist-header">
-              <div className="playlist-cover">
-                <img src={playlist.cover} alt="Playlist Cover" />
-              </div>
-              <div className="playlist-info">
-                <h3>{playlist.name}</h3>
-                <p>{playlist.songs.length} songs</p>
-                <button 
-                  onClick={() => window.open(playlist.spotifyUrl, '_blank')}
-                  className="spotify-link-btn"
-                >
-                  Open in Spotify
-                </button>
-              </div>
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className={`fullscreen-backdrop ${isLightMode ? 'light-backdrop' : 'dark-backdrop'}`}
+              onClick={togglePlaylist}
+            />
+            
+            {/* Full Screen Playlist */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              className={`fullscreen-playlist ${isLightMode ? 'light-mode' : 'dark-mode'}`}
+            >
+              {/* Close Button */}
               <button 
                 onClick={togglePlaylist}
-                className="close-btn"
+                className="close-btn-fullscreen"
               >
-                <X size={20} />
+                <X size={24} />
               </button>
-            </div>
 
-            {/* Songs List */}
-            <div className="songs-list">
-              <h4>All Songs</h4>
-              <div className="songs-container">
-                {playlist.songs.map((song, index) => (
-                  <motion.div
-                    key={song.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.05 }}
-                    className={`song-item ${currentSong?.id === song.id ? 'active' : ''}`}
-                    onClick={() => playSong(song)}
+              {/* Playlist Header */}
+              <div className="fullscreen-playlist-header">
+                <div className="playlist-cover-fullscreen">
+                  <img src={playlist.cover} alt="Playlist Cover" />
+                </div>
+                <div className="playlist-info-fullscreen">
+                  <h2>{playlist.name}</h2>
+                  <p>{playlist.songs.length} songs • My Collection</p>
+                  <button 
+                    onClick={() => window.open(playlist.spotifyUrl, '_blank')}
+                    className="spotify-link-btn-fullscreen"
                   >
-                    <div className="song-number">
-                      {currentSong?.id === song.id && isPlaying ? (
-                        <Volume2 size={16} className="playing-icon" />
-                      ) : (
-                        <span>{index + 1}</span>
-                      )}
-                    </div>
-                    <div className="song-image">
-                      <img 
-                        src={song.image} 
-                        alt={song.title}
-                        onError={(e) => {
-                          e.target.src = playlist.cover; // Fallback to Akatsuki image
-                        }}
-                      />
-                    </div>
-                    <div className="song-details">
-                      <h5>{song.title}</h5>
-                      <p>{song.artist} • {song.album}</p>
-                    </div>
-                    <div className="song-duration">
-                      {song.duration}
-                    </div>
-                    <div className="song-play-btn">
-                      <Play size={14} />
-                    </div>
-                  </motion.div>
-                ))}
+                    <ExternalLink size={18} />
+                    Open in Spotify
+                  </button>
+                </div>
               </div>
-            </div>
-          </motion.div>
+
+              {/* Songs List */}
+              <div className="fullscreen-songs-list">
+                <div className="songs-header-fullscreen">
+                  <div className="song-header-number-fullscreen">#</div>
+                  <div className="song-header-title-fullscreen">TITLE</div>
+                  <div className="song-header-album-fullscreen">ALBUM</div>
+                  <div className="song-header-duration-fullscreen">
+                    <Music size={16} />
+                  </div>
+                </div>
+                
+                <div className="songs-container-fullscreen">
+                  {playlist.songs.map((song, index) => (
+                    <motion.div
+                      key={song.id}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.03 }}
+                      className={`fullscreen-song-item ${currentSong?.id === song.id ? 'active' : ''}`}
+                      onClick={() => playSong(song)}
+                    >
+                      <div className="song-number-fullscreen">
+                        {currentSong?.id === song.id && isPlaying ? (
+                          <Volume2 size={18} className="playing-icon" />
+                        ) : (
+                          <span>{index + 1}</span>
+                        )}
+                      </div>
+                      
+                      <div className="song-info-fullscreen">
+                        <div className="song-image-fullscreen">
+                          <img 
+                            src={song.image} 
+                            alt={song.title}
+                            onError={(e) => {
+                              e.target.src = playlist.cover;
+                            }}
+                          />
+                        </div>
+                        <div className="song-details-fullscreen">
+                          <h4>{song.title}</h4>
+                          <p>{song.artist}</p>
+                        </div>
+                      </div>
+                      
+                      <div className="song-album-fullscreen">
+                        <span>{song.album}</span>
+                      </div>
+                      
+                      <div className="song-duration-fullscreen">
+                        {song.duration}
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </div>
